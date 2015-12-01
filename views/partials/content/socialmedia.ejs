@@ -1,0 +1,10 @@
+<article class="socialmeeting">
+	<span class="title">Join the movement:</span>
+	<ul class="group inline-block">
+		<% appdata.social.forEach(function(item){ %>
+		<li class="inline-block social"><a href="<%= item.url %>">
+			<i class="<%= item.class %>"></i>
+		</a></li>
+			<% }); %>
+	</ul>
+</article>
